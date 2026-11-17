@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Simulador de Senhas Curtas</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h2>Simulador de Força Bruta (Até 3 caracteres)</h2>
+    <p>Digite uma senha curta (letras minúsculas e números) para ver o progresso da descoberta:</p>
+    
+    <div class="input-group">
+      <input type="text" id="senhaAlvo" maxlength="3" placeholder="Ex: a1b">
+      <button id="btnIniciar">Iniciar Teste</button>
+    </div>
+
+    <div class="progress-container">
+      <div class="progress-bar" id="barraProgresso"></div>
+    </div>
+
+    <div class="stats">
+      <p><strong>Progresso:</strong> <span id="porcentagem">0%</span></p>
+      <p><strong>Tentativa atual:</strong> <span id="tentativaAtual">-</span></p>
+      <p><strong>Total de tentativas:</strong> <span id="contadorTentativas">0</span></p>
+      <p id="resultado" class="resultado"></p>
+    </div>
+  </div>
+
+  <script src="index.js"></script>
+</body>
+</html>
